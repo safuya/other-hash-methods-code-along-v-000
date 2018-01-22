@@ -10,6 +10,6 @@ require 'pry'
 
 def get_the_min(groceries)
   items = []
-  groceries.each { |_, values| items << values }
+  groceries.values.each { |_, values| items << values }
   items.min
 end
