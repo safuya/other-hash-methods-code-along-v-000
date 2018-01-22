@@ -12,7 +12,6 @@ def get_the_values(groceries)
   items = []
   groceries.each do |key, _|
     groceries[key].each { |food| items << food }
-    binding.pry
   end
   items
 end
