@@ -10,6 +10,9 @@ require 'pry'
 
 def get_the_values(groceries)
   items = []
-  groceries.values.each { |_, values| items << values }
+  groceries.values.each do |_, values|
+    items << values
+    binding.pry
+  end
   items
 end
