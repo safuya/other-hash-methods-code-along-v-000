@@ -11,7 +11,7 @@ require 'pry'
 def get_the_values(groceries)
   items = []
   groceries.each do |key, _|
-    items << groceries[key]
+    groceries[key].each { |food| items << food }
     binding.pry
   end
   items
